@@ -1,0 +1,22 @@
+<div class="card">
+  <img [src]="product.image" [alt]="product.name" class="product-image">
+
+  <h3>{{ product.name }}</h3>
+  <p class="description">{{ product.description }}</p>
+
+  <p class="price"><strong>{{ product.price }} ₸</strong></p>
+  <p class="rating">⭐ {{ product.rating }}</p>
+
+  <div class="actions">
+    <a [href]="product.link" target="_blank" class="kaspi-btn">На Kaspi</a>
+
+    <div class="share-group">
+      <button (click)="shareToWhatsApp()" class="share-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </button>
+      <button (click)="shareToTelegram()" class="share-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      </button>
+    </div>
+  </div>
+</div>

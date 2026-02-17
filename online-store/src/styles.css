@@ -1,0 +1,51 @@
+
+.main-header {
+  text-align: center;
+  padding: 40px 0;
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.big-logo {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.big-logo:hover {
+  transform: scale(1.1);
+}
+
+
+.share-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.share-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.share-btn img {
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.2s;
+}
+
+.share-btn:hover img {
+  opacity: 0.7;
+}
+
+.kaspi-btn {
+  background: #f14635;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
