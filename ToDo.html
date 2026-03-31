@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header{
+            display: flex;
+            align-items: start;
+            background-color: black;
+            color: white;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        p{
+            margin: 20px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+        }
+        h1{
+            display: flex;
+            align-self: start;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        input{
+            width: 600px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        button{
+            height: 35px;
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="headerp">ToDo List</p>
+    </header>
+    <div class="main">
+    <h1>ToDo List</h1>
+    <div>
+        <input type="text">
+        <button>Add</button>
+    </div>
+
+    <div class="array">
+
+    </div>
+    </div>
+
+    <script>
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+        const arrayDiv = document.querySelector('.array');
+
+        button.addEventListener('click', addTask);
+
+        function addTask(){
+            const text = input.value.trim()
+
+            if (text === ''){
+                return;
+            }
+
+            const taskDiv = document.createElement('div');
+            taskDiv.style.display = 'flex';
+            taskDiv.style.flexDirection = 'row';
+            taskDiv.style.alignItems = 'center';
+            taskDiv.style.justifyContent = 'space-between';
+            taskDiv.style.border = '1px solid black';
+            taskDiv.style.padding = '10px';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+
+            const span = document.createElement('span');
+            span.textContent = text;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+
+            deleteButton.addEventListener('click', function() {
+                taskDiv.remove()
+            }
+            );
+
+            taskDiv.appendChild(span);
+            taskDiv.appendChild(checkbox);
+            taskDiv.appendChild(deleteButton);
+
+            arrayDiv.appendChild(taskDiv);
+        }
+    </script>
+</body>
+</html>
