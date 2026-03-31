@@ -1,0 +1,40 @@
+[
+  {"model": "api.category", "pk": 1, "fields": {"name": "Electronics"}},
+  {"model": "api.category", "pk": 2, "fields": {"name": "Clothing"}},
+  {"model": "api.category", "pk": 3, "fields": {"name": "Books"}},
+
+  {"model": "api.product", "pk": 1, "fields": {
+    "name": "Wireless Headphones", "price": 79.99,
+    "description": "Over-ear noise-cancelling Bluetooth headphones with 30h battery.",
+    "count": 50, "is_active": true, "category": 1}},
+
+  {"model": "api.product", "pk": 2, "fields": {
+    "name": "Mechanical Keyboard", "price": 129.99,
+    "description": "TKL mechanical keyboard with Cherry MX switches and RGB backlight.",
+    "count": 30, "is_active": true, "category": 1}},
+
+  {"model": "api.product", "pk": 3, "fields": {
+    "name": "USB-C Hub", "price": 34.99,
+    "description": "7-in-1 USB-C hub: HDMI, USB 3.0 x3, SD card, PD charging.",
+    "count": 0, "is_active": false, "category": 1}},
+
+  {"model": "api.product", "pk": 4, "fields": {
+    "name": "Classic White T-Shirt", "price": 19.99,
+    "description": "100% cotton unisex t-shirt, available in sizes XS–3XL.",
+    "count": 200, "is_active": true, "category": 2}},
+
+  {"model": "api.product", "pk": 5, "fields": {
+    "name": "Slim Fit Jeans", "price": 49.99,
+    "description": "Stretch denim slim-fit jeans in classic indigo wash.",
+    "count": 80, "is_active": true, "category": 2}},
+
+  {"model": "api.product", "pk": 6, "fields": {
+    "name": "Clean Code", "price": 39.99,
+    "description": "A handbook of agile software craftsmanship by Robert C. Martin.",
+    "count": 15, "is_active": true, "category": 3}},
+
+  {"model": "api.product", "pk": 7, "fields": {
+    "name": "The Pragmatic Programmer", "price": 44.99,
+    "description": "Your journey to mastery — 20th anniversary edition.",
+    "count": 10, "is_active": true, "category": 3}}
+]
