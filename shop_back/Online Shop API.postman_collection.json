@@ -37,7 +37,7 @@
         {
           "name": "create category",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": []
           },
           "response": []
@@ -45,7 +45,7 @@
         {
           "name": "update category",
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": []
           },
           "response": []
@@ -53,7 +53,7 @@
         {
           "name": "delete category",
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": []
           },
           "response": []
@@ -82,7 +82,7 @@
         {
           "name": "create product",
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": []
           },
           "response": []
@@ -90,7 +90,7 @@
         {
           "name": "update product",
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": []
           },
           "response": []
@@ -98,7 +98,7 @@
         {
           "name": "delete product",
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": []
           },
           "response": []
